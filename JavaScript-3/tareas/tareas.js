@@ -105,7 +105,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  return String(n)[0] === "9" ? true : false;
+  return String(n)[0] === "9";
 }
 
 function todosIguales(arreglo) {

@@ -148,13 +148,16 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return "Es positivo";
-  } else if (numero < 0) {
-    return "Es negativo";
-  } else {
-    return false;
-  }
+  //con if
+  // if (numero > 0) {
+  //   return "Es positivo";
+  // } else if (numero < 0) {
+  //   return "Es negativo";
+  // } else {
+  //   return false;
+  // }
+  //Con ternario
+  return numero === 0 ? false : numero > 0 ? "Es positivo" : "Es negativo";
 }
 
 function agregarSimboloExclamacion(str) {
@@ -182,8 +185,7 @@ function deEuroAdolar(euro) {
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  let dolar;
-  return (dolar = euro * 1.2);
+  return euro * 1.2;
 }
 
 // ---------- Puntos extra ----------
